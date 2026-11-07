@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table</title>
+
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    
+    .pricing {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .plan {
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding-bottom: 20px;
+    }
+
+   
+    .plan h2 {
+      color: white;
+      margin: 0;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+    }
+
+  
+    .basic h2    {
+         background: teal;
+    }
+    .standard h2 {
+         background: royalblue;
+    }
+    .premium h2  {
+         background: purple;
+    }
+
+    .price {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .plan li {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .plan a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 30px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Choose Your Plan</h1>
+
+  <div class="pricing">
+
+    <div class="plan basic">
+      <h2>Basic</h2>
+      <div class="price">$0</div>
+      <ul>
+        <li>150 Products</li>
+        <li>5 Email Accounts</li>
+        <li>2 GB Bandwidth</li>
+        <li>500 GB Storage</li>
+      </ul>
+      <a href="#">Select</a>
+    </div>
+
+    <div class="plan standard">
+      <h2>Standard</h2>
+      <div class="price">$39</div>
+      <ul>
+        <li>1,500 Products</li>
+        <li>10 Email Accounts</li>
+        <li>6 GB Bandwidth</li>
+        <li>2 GB Storage</li>
+      </ul>
+      <a href="#">Select</a>
+    </div>
+
+    <div class="plan premium">
+      <h2>Premium</h2>
+      <div class="price">$129</div>
+      <ul>
+        <li>10,000 Products</li>
+        <li>20 Email Accounts</li>
+        <li>Unlimited Bandwidth</li>
+        <li>5 GB Storage</li>
+      </ul>
+      <a href="#">Select</a>
+    </div>
+
+  </div>
+</body>
+</html>

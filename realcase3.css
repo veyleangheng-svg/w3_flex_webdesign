@@ -1,0 +1,141 @@
+* {
+     box-sizing: border-box;
+     margin: 0; padding: 0; 
+  }
+ 
+body{
+  font-family: Roboto, Arial, sans-serif;
+  background: #fff;
+  color: #0f0f0f;
+}
+ 
+
+nav {
+  display: flex;                     
+  justify-content: space-between;   
+  align-items: center;
+  padding: 10px;
+}
+.nav-left{ 
+    display: flex;
+    align-items: center; 
+    gap: 16px; 
+}
+.nav-center{
+    display: flex;
+    align-items: center;
+    gap: 12px; flex: 1;
+    max-width: 720px; 
+    margin: 0 20px; 
+}
+.nav-center input{ 
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+}
+.nav-right{ 
+    display: flex;
+    align-items: center;
+    gap: 24px; 
+}
+.logo{ 
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo-badge{ 
+    background: #f00;
+    color: #fff;
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+.icon, .mic { 
+    font-size: 20px;
+}
+ 
+
+.tags {
+  display: flex;
+  gap: 12px;
+  padding: 12px 10px;
+  overflow-x: auto;      
+}
+.tag {
+  background: #e5e5e5;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.tag.active { 
+    background: #000;
+    color: #fff;
+}
+ 
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;               
+  gap: 10px;
+  padding: 10px;
+  background: #eee;
+}
+.video {
+  display: flex;
+  flex-direction: column;            
+  flex: 0 0 calc(25% - 7.5px);        
+}
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f9f5ee url("thumbnail.png") center / cover no-repeat;
+}
+.video-info {
+  display: flex;                     
+  gap: 10px;
+  padding: 8px 0;
+}
+.avatar { 
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background: #fbbf24;
+}
+.video-text { 
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.video-text h3 { 
+    font-size: 15px;
+    font-weight: 400; 
+}
+.video-text p{
+    font-size: 14px;
+    color: #606060;
+}
+ 
+@media (max-width: 900px) { 
+    .video {
+         flex-basis: calc(50% - 5px);
+    }
+} 
+@media (max-width: 600px) {
+  nav {
+     flex-wrap: wrap;
+  }                 
+  .nav-center { 
+    order: 3; 
+    flex-basis: 100%;
+    margin: 10px 0 0;
+    max-width: none; 
+  }
+  .video { 
+    flex-basis: 100%; 
+  }            
+}
